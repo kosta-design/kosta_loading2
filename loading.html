@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>kosta-loading</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Original Hover Effects with CSS3" />
+  <meta name="keywords" content="css3, transitions, thumbnail, animation, hover, effect, description, caption" />
+  <meta name="author" content="Alessio Atzeni for Codrops" />
+  <link rel="shortcut icon" href="../favicon.ico"> 
+  <link rel="stylesheet" type="text/css" href="css/demo.css" />
+  <link rel="stylesheet" type="text/css" href="css/style_common.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="css/style1.css" media="all" rel="stylesheet" type="text/css">
+</head>
+<style>
+@font-face {
+  font-family: BAUHS93;
+  src: url(webfonts/BAUHS93.woff);
+}
+
+@font-face {
+  font-family: HARLOWSI;
+  src: url(webfonts/HARLOWSI_1.ttf);
+}
+
+@font-face {
+  font-family: YanoneKaffeesatz;
+  src: url(webfonts/YanoneKaffeesatz-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: Inconsolata;
+  src: url(webfonts/Inconsolata-VariableFont_wdth,wght.ttf);
+}
+
+a {
+  text-align: left;
+  text-decoration:none;
+  outline:none;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+a:hover {
+  color:#fff;
+  text-decoration:none;
+  outline:none;
+}
+
+.pozicija1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 98.8%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.okvir1 { 
+  height: center;
+  width: center;
+  position: relative;
+}
+
+.pozicija2 {
+  margin: 0;
+  position: absolute;
+  top: 49.9%;
+  left: 49.9%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.okvir2 { 
+  height: 800px;
+  width: 1600px;
+  position: relative;
+}
+
+#myDiv {
+  transform: rotateZ(-90deg);
+  text-align: center;
+  color: white;
+  font-family: Inconsolata;
+  font-size: 20px;
+}
+
+.pozicija3 {
+  margin: 0;
+  position: absolute;
+  top: 46.6%;
+  left: 48.8%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.okvir3 { 
+  height: 1008px;
+  width: 1880px;
+  position: relative;
+}
+
+.sidebar {
+  display:none;
+  z-index:5;
+  background: lightgray;
+}
+
+h1 {
+  font-size: 60px;
+  color: black;
+  text-align: center;
+  font-family: BAUHS93;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 30px;
+  color: black;
+  font-family: forte;
+}
+
+h2:hover {
+  color: lightgray;
+}
+
+.pozicija4 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.okvir4 { 
+  height: 600px;
+  width: 1200px;
+  position: relative;
+}
+
+.okvir5 { 
+  height: 600px;
+  width: 1200px;
+  position: relative;
+  border: 3px solid blue;
+  background: url("img/white_texture.jpg");
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.discordleft {
+  display: block;
+  margin-left: 30%;
+  margin-right: auto;
+}
+
+.discordright {
+  display: block;
+  margin-left: auto;
+  margin-right: 30%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.pozicija6 {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 13.4%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.okvir6 { 
+  height: center;
+  width: center;
+  position: relative;
+  font-family: HARLOWSI;
+  font-size: 20px;
+}
+
+.pozicija7 {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 53.5%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.okvir7 { 
+  height: center;
+  width: center;
+  position: relative;
+  font-family: HARLOWSI;
+  font-size: 20px;
+}
+
+.pozicija8 {
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 85.9%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.okvir8 { 
+  height: center;
+  width: center;
+  position: relative;
+  font-family: HARLOWSI;
+  font-size: 20px;
+}
+
+.pozicija9 {
+  margin: 0;
+  position: absolute;
+  top: 36%;
+  left: 56%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.okvir9 { 
+  height: 10px;
+  width: 10px;
+  position: relative;
+  font-family: HARLOWSI;
+  font-size: 20px;
+  opacity: 0.2;
+}
+
+.store-container {
+  line-height:0;
+  margin: 50px auto;
+  width: 100%;
+}
+.stroke {
+  stroke: #0170bb;
+  stroke-width: 5;
+  stroke-linejoin: round;
+  stroke-miterlimit: 10;
+}
+.round-end {
+  stroke-linecap: round;
+}
+#store {
+  animation: fadeIn 0.8s ease-in;
+}
+
+#toldo,
+.grass,
+#window,
+#door,
+.trees,
+.cat,
+.cat-shadow,
+.box,
+.parachute,
+.tshirt,
+.cap,
+.ball,
+#text,
+#button,
+.sky-circle,
+.sky-circle2,
+.sky-circle3 {
+  opacity: 0;
+}
+
+.plane {
+  animation: clouds 15s linear backwards infinite;
+  will-change: transform;
+}
+@keyframes clouds {
+  from {
+    transform: translate(-150%, 0);
+  }
+  to {
+    transform: translate(150%, 0);
+  }
+}
+.sky-circle {
+  animation: fadeInOut 10s 5s ease-in infinite;
+}
+.sky-circle2 {
+  animation: fadeInOut 12s 30s ease-in infinite;
+}
+.sky-circle3 {
+  animation: fadeInOut 8s 40s ease-in infinite;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -394px;
+  margin-top: 74px;
+}
+
+.ghost {
+  animation: float 3s ease-out infinite;
+}
+
+@keyframes float {
+  50% {
+     transform: translate(0, 20px);
+  }
+}
+.shadowFrame {
+  width: 130px;
+  margin-top: 15px;
+}
+.shadow {
+  animation: shrink 3s ease-out infinite;
+  transform-origin: center center;
+  ellipse {
+    transform-origin: center center;
+  }
+}
+
+@keyframes shrink {
+  0% {
+    width: 90%;
+    margin: 0 5%;
+  }
+  50% {
+    width: 60%;
+    margin: 0 18%;
+  }
+  100% {
+    width: 90%;
+    margin: 0 5%;
+  }
+}
+
+.pozicija10 {
+  margin: 0;
+  position: absolute;
+  top: 110%;
+  left: 110%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.okvir10 { 
+  height: 200px;
+  width: 400px;
+  position: relative;
+}
+
+.pozicija11 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.okvir11 { 
+  height: 30px;
+  width: 100px;
+  position: relative;
+}
+
+.pozicija12 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.okvir12 { 
+  height: 30px;
+  width: 100px;
+  position: relative;
+}
+
+html {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+#btn {
+  background: #222;
+  height: 50px;
+  min-width: 150px;
+  border: none;
+  border-radius: 10px;
+  color: #eee;
+  font-size: 40px;
+  font-family: 'Cookie', cursive;
+  position: relative;
+  transition: 1s;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+#btn #circle {
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+  transition: 500ms;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+#btn:hover {
+  background: transparent;
+}
+
+#btn:hover #circle {
+  height: 50px;
+  width: 150px;
+  left: 0;
+  border-radius: 0;
+  border-bottom: 2px solid #eee;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+</style>
+<body>
+<div class='cursor' id="cursor"></div>
+<div class='cursor2' id="cursor2"></div>
+<div class='cursor3' id="cursor3"></div>
+
+<!-- -->
+<!--VIDEO BACKGORUND-->
+<!-- -->
+<video autoplay muted loop id="myVideo">
+  <source src="vid/LoadingScreen.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<!--/VIDEO BACKGORUND-->
+
+<div class="pozicija3">
+  <div class="okvir3">
+    <!-- Sidebar -->
+	<div class="w3-sidebar w3-bar-block w3-black w3-animate-left" style="width:230px;display:none;z-index:5" id="mySidebar">
+      <h5 class="w3-bar-item w3-button tablink" onclick="w3_close()">Close &times</h5>
+      <!--<button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Fade')">Fade</button>-->
+	  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Left')">Staff Team</button>
+	  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Right')">O Nas</button>
+	  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Top')">Pravila</button>
+	  <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Bottom')">Muzika</button>
+	  <button class="w3-bar-item tablink" style="background:black;"></button><!--LEAVE THIS LINE!-->
+	</div>
+
+	<!-- Page Content -->
+	<div class="w3-overlay w3-animate-opacity" onclick="w3_close()" id="myOverlay"></div>
+
+	<div>
+	  <button class="w3-button w3-black w3-xxlarge" onclick="w3_open()">&#9776;</button>
+	  <div class="w3-container">
+	  </div>
+	</div>
+     
+	<script>
+	function w3_open() {
+	  document.getElementById("mySidebar").style.display = "block";
+	  document.getElementById("myOverlay").style.display = "block";
+	}
+
+	function w3_close() {
+	  document.getElementById("mySidebar").style.display = "none";
+	  document.getElementById("myOverlay").style.display = "none";
+	}
+	</script>
+  </div>
+</div>
+<div class="pozicija4">
+  <div class="okvir4">
+<div style="margin-left:130px">
+  <div class="w3-padding"></div>
+<!--
+  <div id="Fade" class="w3-container city w3-animate-opacity" style="display:none">
+    <h2>Fade in</h2>
+    <p>London is the capital city of England.</p>
+    <p>It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  </div>
+-->
+  <div id="Left" class="w3-container city w3-animate-left okvir5" style="display:none;">
+    <img src="img/discord-logo.png" class="center" width="240" height="160">
+    <div class="row">
+      <div class="column">
+        <img src="img/discord-icon.png" class="discordleft" width="60" height="60">
+	  </div>
+	  <div class="column">
+	    <img src="img/discord-icon.png" class="discordright" width="60" height="60">
+	  </div>
+	  <div class="column">
+	    <img src="img/discord-icon.png" class="discordright" width="60" height="60">
+	  </div>
+	</div>
+	<div class="pozicija6">
+      <div class="okvir6">
+        <p>&bull; Kosta#6384</p>
+	  </div>
+	</div>
+	<div class="pozicija7">
+      <div class="okvir7">
+        <p>&bull; Kosta#6384</p>
+	  </div>
+	</div>
+	<div class="pozicija8">
+      <div class="okvir8">
+        <p>&bull; Kosta#6384</p>
+	  </div>
+	</div>
+	<div class="pozicija9">
+      <div class="okvir9">
+        <img src="img/discord-icon2.png" class="discordright" width="400" height="400">
+	  </div>
+	</div>
+	  <div class="store-container">
+		<div class="border-animation">
+			<svg xmlns="http://www.w3.org/2000/svg" id="store" viewBox="130 0 1230 930">
+				<defs>
+					<g id="plane">
+						<path fill="#FFF" class="stroke" d="M966.1 203.5c0 0 70.8 0.9 70.8 10.7 0 20.6-23.3 41.3-88.7 43 -34 0.9-98.5 3.6-120-1.8 -30.5-7.6-109.1-44-112-52.8 -13.4-41.2-18.8-49.3 2.7-49.3 12 0 18.6 0 26 0 14.3 0 12.5 2.7 27.8 42.1 0 0 50.2 8.1 66.3-1.8s24.6-23.3 57.6-23.4l21 0.1C938.5 171.3 949.5 176.3 966.1 203.5z"/>
+						<path fill="#a5c7e4" d="M896.5 182.4v18c0 1.1-0.9 2-2 2h-39.6c-1.8 0-2.7-2.1-1.5-3.4 5.7-6 19.6-17.9 41-18.6C895.5 180.3 896.5 181.2 896.5 182.4z"/>
+						<path fill="#a5c7e4" d="M906.5 182.4v18c0 1.1 0.9 2 2 2h39.6c1.8 0 2.4-1.9 1.5-3.4 -6.1-9.6-12.1-18.6-41-18.6C907.4 180.4 906.5 181.2 906.5 182.4z"/>
+						<path fill="none" class="stroke" d="M896.5 182.4v18c0 1.1-0.9 2-2 2h-39.6c-1.8 0-2.7-2.1-1.5-3.4 5.7-6 19.6-17.9 41-18.6C895.5 180.3 896.5 181.2 896.5 182.4z"/>
+						<path fill="none" class="stroke" d="M906.5 182.4v18c0 1.1 0.9 2 2 2h39.6c1.8 0 2.4-1.9 1.5-3.4 -6.1-9.6-12.1-18.6-41-18.6C907.4 180.4 906.5 181.2 906.5 182.4z"/>
+						<path fill="#a5c7e4" d="M745.3 193.7h-58.2c-3.7 0-6.7-3-6.7-6.7v0c0-3.7 3-6.7 6.7-6.7h58.2c3.7 0 6.7 3 6.7 6.7v0C752 190.6 749 193.7 745.3 193.7z"/>
+						<g id="helix">
+							<path fill="#0170BB" d="M1037.8 233.5h-1.8c-4.2 0-3.1-12.1-3.1-12.1s-1.1-12.1 3.1-12.1l0 0c5.2 0 9.4 4.2 9.4 9.4v7.2C1045.4 230.1 1041.9 233.5 1037.8 233.5z"/>
+							<path fill="#a5c7e4" d="M1037.2 214.4L1037.2 214.4c-4.6 0-8.3-34-8.3-34 0-4.6 3.8-8.3 8.3-8.3h0c4.6 0 8.3 3.8 8.3 8.3C1045.6 180.3 1041.8 214.4 1037.2 214.4z"/>
+							<path fill="#a5c7e4" d="M1037.2 228.5L1037.2 228.5c4.6 0 8.3 34 8.3 34 0 4.6-3.8 8.3-8.3 8.3h0c-4.6 0-8.3-3.8-8.3-8.3C1028.9 262.5 1032.7 228.5 1037.2 228.5z"/>
+							<path fill="none" class="stroke" d="M1037.2 214.4L1037.2 214.4c-4.6 0-8.3-34-8.3-34 0-4.6 3.8-8.3 8.3-8.3h0c4.6 0 8.3 3.8 8.3 8.3C1045.6 180.3 1041.8 214.4 1037.2 214.4z"/>
+							<path fill="none" class="stroke" d="M1037.2 228.5L1037.2 228.5c4.6 0 8.3 34 8.3 34 0 4.6-3.8 8.3-8.3 8.3h0c-4.6 0-8.3-3.8-8.3-8.3C1028.9 262.5 1032.7 228.5 1037.2 228.5z"/>
+						</g>
+						<use class="helix" xlink:href="#helix" filter="url(#f1)"></use>
+						<line fill="none" class="stroke" x1="728" y1="213.3" x2="520" y2="213.2"/>
+						<polyline fill="none" class="stroke" points="520 182.8 558.5 214.2 520 243.7 "/>
+						<path fill="#FFF" class="stroke" d="M506.9 253.6H21.2c-6.6 0-12-5.4-12-12v-56.7c0-6.6 5.4-12 12-12h485.8c6.6 0 12 5.4 12 12v56.7C518.9 248.2 513.5 253.6 506.9 253.6z"/>
+						<text transform="matrix(1.0027 0 0 1 44.8218 224.8768)" font-family='Fredoka One' font-size="34" fill="#0170BB"> Get more info. in our Discord </text>
+						<path fill="#a5c7e4" d="M850.5 216.5h79.7l-4.5 10.7c0 0-2.7 7.2-9.9 7.2h-72.6c0 0-6.3-0.9-1.8-7.2L850.5 216.5z"/>
+						<path fill="none" class="stroke" d="M745.3 193.7h-58.2c-3.7 0-6.7-3-6.7-6.7v0c0-3.7 3-6.7 6.7-6.7h58.2c3.7 0 6.7 3 6.7 6.7v0C752 190.6 749 193.7 745.3 193.7z"/>
+						<path fill="none" class="stroke" d="M850.5 216.5h79.7l-4.5 10.7c0 0-2.7 7.2-9.9 7.2h-72.6c0 0-6.3-0.9-1.8-7.2L850.5 216.5z"/>
+					  </g>
+				</defs>
+					<use class="plane" xlink:href="#plane" y="-80"></use>
+				</svg>
+			</div>
+		</div>
+  </div>
+
+  <div id="Right" class="w3-container city w3-animate-right okvir5" style="display:none">
+    <h1>YOUR SERVER NAME</h1>
+	<h2>Welcome to our server! We are constantly looking for new staff and new leaders of white-</h2><h2>listed jobs.</h2><h2> Do you thing you got what it takes?</h2><h2> Fill out application form in our discord!</h2><h2>Discord: https://discord.gg/CODE</h2>
+	<div class="container">
+<svg class="ghost" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="127.433px" height="132.743px" viewBox="0 0 127.433 132.743" enable-background="new 0 0 127.433 132.743"
+	 xml:space="preserve">
+<path fill="#ff5833" d="M116.223,125.064c1.032-1.183,1.323-2.73,1.391-3.747V54.76c0,0-4.625-34.875-36.125-44.375
+	s-66,6.625-72.125,44l-0.781,63.219c0.062,4.197,1.105,6.177,1.808,7.006c1.94,1.811,5.408,3.465,10.099-0.6
+	c7.5-6.5,8.375-10,12.75-6.875s5.875,9.75,13.625,9.25s12.75-9,13.75-9.625s4.375-1.875,7,1.25s5.375,8.25,12.875,7.875
+	s12.625-8.375,12.625-8.375s2.25-3.875,7.25,0.375s7.625,9.75,14.375,8.125C114.739,126.01,115.412,125.902,116.223,125.064z"/>
+<circle fill="#013E51" cx="86.238" cy="57.885" r="6.667"/>
+<circle fill="#013E51" cx="40.072" cy="57.885" r="6.667"/>
+<path fill="#013E51" d="M71.916,62.782c0.05-1.108-0.809-2.046-1.917-2.095c-0.673-0.03-1.28,0.279-1.667,0.771
+	c-0.758,0.766-2.483,2.235-4.696,2.358c-1.696,0.094-3.438-0.625-5.191-2.137c-0.003-0.003-0.007-0.006-0.011-0.009l0.002,0.005
+	c-0.332-0.294-0.757-0.488-1.235-0.509c-1.108-0.049-2.046,0.809-2.095,1.917c-0.032,0.724,0.327,1.37,0.887,1.749
+	c-0.001,0-0.002-0.001-0.003-0.001c2.221,1.871,4.536,2.88,6.912,2.986c0.333,0.014,0.67,0.012,1.007-0.01
+	c3.163-0.191,5.572-1.942,6.888-3.166l0.452-0.453c0.021-0.019,0.04-0.041,0.06-0.061l0.034-0.034
+	c-0.007,0.007-0.015,0.014-0.021,0.02C71.666,63.771,71.892,63.307,71.916,62.782z"/>
+<circle fill="#491003" stroke="#310b02" stroke-miterlimit="10" cx="18.614" cy="99.426" r="3.292"/>
+<circle fill="#491003" stroke="#310b02" stroke-miterlimit="10" cx="95.364" cy="28.676" r="3.291"/>
+<circle fill="#491003" stroke="#310b02" stroke-miterlimit="10" cx="24.739" cy="93.551" r="2.667"/>
+<circle fill="#491003" stroke="#310b02" stroke-miterlimit="10" cx="101.489" cy="33.051" r="2.666"/>
+<circle fill="#491003" stroke="#310b02" stroke-miterlimit="10" cx="18.738" cy="87.717" r="2.833"/>
+<path fill="#491003" stroke="#310b02" stroke-miterlimit="10" d="M116.279,55.814c-0.021-0.286-2.323-28.744-30.221-41.012
+	c-7.806-3.433-15.777-5.173-23.691-5.173c-16.889,0-30.283,7.783-37.187,15.067c-9.229,9.736-13.84,26.712-14.191,30.259
+	l-0.748,62.332c0.149,2.133,1.389,6.167,5.019,6.167c1.891,0,4.074-1.083,6.672-3.311c4.96-4.251,7.424-6.295,9.226-6.295
+	c1.339,0,2.712,1.213,5.102,3.762c4.121,4.396,7.461,6.355,10.833,6.355c2.713,0,5.311-1.296,7.942-3.962
+	c3.104-3.145,5.701-5.239,8.285-5.239c2.116,0,4.441,1.421,7.317,4.473c2.638,2.8,5.674,4.219,9.022,4.219
+	c4.835,0,8.991-2.959,11.27-5.728l0.086-0.104c1.809-2.2,3.237-3.938,5.312-3.938c2.208,0,5.271,1.942,9.359,5.936
+	c0.54,0.743,3.552,4.674,6.86,4.674c1.37,0,2.559-0.65,3.531-1.932l0.203-0.268L116.279,55.814z M114.281,121.405
+	c-0.526,0.599-1.096,0.891-1.734,0.891c-2.053,0-4.51-2.82-5.283-3.907l-0.116-0.136c-4.638-4.541-7.975-6.566-10.82-6.566
+	c-3.021,0-4.884,2.267-6.857,4.667l-0.086,0.104c-1.896,2.307-5.582,4.999-9.725,4.999c-2.775,0-5.322-1.208-7.567-3.59
+	c-3.325-3.528-6.03-5.102-8.772-5.102c-3.278,0-6.251,2.332-9.708,5.835c-2.236,2.265-4.368,3.366-6.518,3.366
+	c-2.772,0-5.664-1.765-9.374-5.723c-2.488-2.654-4.29-4.395-6.561-4.395c-2.515,0-5.045,2.077-10.527,6.777
+	c-2.727,2.337-4.426,2.828-5.37,2.828c-2.662,0-3.017-4.225-3.021-4.225l0.745-62.163c0.332-3.321,4.767-19.625,13.647-28.995
+	c3.893-4.106,10.387-8.632,18.602-11.504c-0.458,0.503-0.744,1.165-0.744,1.898c0,1.565,1.269,2.833,2.833,2.833
+	c1.564,0,2.833-1.269,2.833-2.833c0-1.355-0.954-2.485-2.226-2.764c4.419-1.285,9.269-2.074,14.437-2.074
+	c7.636,0,15.336,1.684,22.887,5.004c26.766,11.771,29.011,39.047,29.027,39.251V121.405z"/>
+</svg>
+
+
+
+  <p class="shadowFrame"><svg version="1.1" class="shadow" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="61px" y="20px"
+	 width="122.436px" height="39.744px" viewBox="0 0 122.436 39.744" enable-background="new 0 0 122.436 39.744"
+	 xml:space="preserve">
+<ellipse fill="#EF3D23" cx="61.128" cy="19.872" rx="49.25" ry="8.916"/>
+    </svg></p>
+</div>
+	<div class="pozicija9">
+      <div class="okvir9">
+        <img src="img/png.png" class="discordright" width="389" height="389">
+	  </div>
+	</div>
+  </div>
+  
+  <div id="Top" class="w3-container city w3-animate-top okvir5" style="display:none">
+    <div class="main">
+                <!-- NINTH EXAMPLE -->
+                <div class="view view-ninth">
+                    <img src="img/gta.jpg" />
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>Powergaming</h2>
+                        <p>Powergaming is defined as forcing players into narrow scenarios by giving them no means to respond, and roleplaying out things which are physically impossible.</p>
+                    </div>
+                </div>
+                <div class="view view-ninth">
+                    <img src="img/gta.jpg" />
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>Metagaming</h2>
+                        <p>Metagaming is defined as utilizing Out-Of-Character knowledge for personal In-Character benefit or gain. This includes any knowledge gained from external programs such as Discord.</p>
+                    </div>
+                </div>
+                <div class="view view-ninth">
+                    <img src="img/gta.jpg" />
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>Radnom Death-Match</h2>
+                        <p> An interaction with a player must be established before you can kill someone and a valid in character exchange.</p>
+                    </div>
+                </div>
+                <div class="view view-ninth">
+                    <img src="img/gta.jpg" />
+                    <div class="mask mask-1"></div>
+                    <div class="mask mask-2"></div>
+                    <div class="content">
+                        <h2>Vehicle Death-Match</h2>
+                        <p>Randomly running over others is not acceptable and will result in an instant ban. You can run someone over if they pose a threat or you have a sufficient character reason to do so.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  </div>
+
+  <div id="Bottom" class="w3-container city w3-animate-bottom okvir10 pozicija10" style="display:none">
+    <div class="pozicija11">
+      <div class="okvir11">
+	    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+	    <div id="btn" onclick="playAudio()"><span class="noselect">Play</span><div id="circle"></div></div>
+    </div>
+  </div>
+	<div class="pozicija12">
+      <div class="okvir12">
+	  <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+	  <div id="btn" onclick="pauseAudio()"><span class="noselect">Pause</span><div id="circle"></div></div>
+    </div>
+  </div>
+  </div>
+
+  <div id="Zoom" class="w3-container city w3-animate-zoom" style="display:none"> <!--PUSTI!!-->
+    <!--<h2>Zoom in</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <p>It is the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>-->
+  </div>
+
+</div>
+
+<script>
+function openLink(evt, animName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(animName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+  </div>
+</div>
+
+<div class="pozicija1">
+  <div class="okvir1">
+    <div id="myDiv">
+      <a>kosta®</a>
+    </div>
+  </div>
+</div>
+
+<audio id="leson" src="audio.mp3" autoplay="true" hidden="true" loop="true"/>
+<script>
+var x = document.getElementById("leson");
+
+x.volume = 0.1;
+
+function playAudio() { 
+	x.play();
+} 
+
+function pauseAudio() { 
+	x.pause();
+} 
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>
